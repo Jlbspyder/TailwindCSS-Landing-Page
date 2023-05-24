@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Design Preview
 
-![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
+![./design/desktop-preview.jpg](./design/desktop-preview.jpg)
 
 
 ### Links
