@@ -13,11 +13,6 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Design Preview
-
-![./design/desktop-preview.jpg](./design/desktop-preview.jpg)
-
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
