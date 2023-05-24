@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-tailwindcss-w9VOquNxsk](https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-tailwindcss-w9VOquNxsk)
+- Live Site URL: [https://jlb-tailwindcss-landing-page.netlify.app/](https://jlb-tailwindcss-landing-page.netlify.app/)
 
 ### Built with
 
