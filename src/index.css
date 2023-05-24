@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-image: url('/public/images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 620px;
+  background-position: 100% -10%;
+}
+
+#cta {
+  background-image: url('/public/images/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+.error {
+  color:  hsl(12, 88%, 59%);
+  margin-left: 10px;
+  font-size: small;
+  margin-top: -30px;
+}
+.input {
+  color: hsl(12, 88%, 59%);
+}
+.twitter {
+  color: #fff;
+  cursor: pointer;
+}
+.fb {
+  color: #fff;
+  cursor: pointer;
+}
+.ig {
+  color: #fff;
+  cursor: pointer;
+}
+.pin {
+  color: #fff;
+  cursor: pointer;
+}
+.youtube {
+  color: #fff;
+  cursor: pointer;
+}
+.twitter:hover,
+.fb:hover,
+.ig:hover,
+.pin:hover,
+.youtube:hover {
+  color:hsl(12, 88%, 59%) ;
+}
+.attribution { 
+  background:hsl(233, 12%, 13%);
+  font-size: 11px; 
+  text-align: center;
+  color: hsl(227, 12%, 61%); 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none; 
+}
+
+@media(max-width: 576px) {
+  body {
+    background-position: 100px -40px;
+    background-size: 430px;
+  }
+
+  #cta {
+    background-image: url('/public/images/bg-simplify-section-mobile.svg');
+  }
+  
+  .one {
+    background: transparent;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 55%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid hsl(12, 88%, 59%);
+  }
+
+  .two {
+    background: transparent;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 52%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid hsl(12, 88%, 59%);
+  }
+
+  .three {
+    background: transparent;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 48.7%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid hsl(12, 88%, 59%);
+  }
+
+  .four {
+    background: transparent;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 45.6%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid hsl(12, 88%, 59%);
+  }
+  
+  .active {
+    background: hsl(12, 88%, 59%);
+  }
+
+  .error {
+    color:  hsl(12, 88%, 59%);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .menu {
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+}
