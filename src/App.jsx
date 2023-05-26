@@ -1,14 +1,19 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Reviews from "./components/Reviews";
+import MobileReviews from "./components/MobileReview";
 import Footer from "./components/Footer";
+import DesktopReview from "./components/DesktopReview";
+import Cta from "./components/Cta";
+
 
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Reviews />
+      <DesktopReview />
+      <MobileReviews />
+      <Cta />
       <Footer />
     </div>
   );
