@@ -40,7 +40,7 @@ const MobileReviews = () => {
     <section id="mobile-reviews">
       <div className="max-w-6xl px-5 mx-auto mt-20 text-center relative md:hidden">
         <h2 className="text-4xl font-bold text-center">What they’ve said</h2>
-        <div className="flex flex-col mt-20 md:flex-row transition-all duration-2000 ease-linear md:space-x-5" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
+        <div className="flex flex-col mt-20 md:flex-row md:space-x-5" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
           <IoArrowBack  className="previous" onClick={handlePrevious} />
           <IoArrowForward  className="next" onClick={handleNext} />
           {Data.map((item, index) => (
@@ -48,7 +48,7 @@ const MobileReviews = () => {
               key={index}
               className={
                 index === currentIndex
-                  ? "flex flex-col item-center my-5 p-6 space-y-6 rounded-lg bg-VeryLightGray md:w-1/3"
+                  ? "flex flex-col item-center my-5 p-6 transition-all duration-2000 ease-linear space-y-6 rounded-lg bg-VeryLightGray md:w-1/3"
                   : ""
               }
             >
