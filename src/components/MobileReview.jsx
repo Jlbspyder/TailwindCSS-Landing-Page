@@ -10,7 +10,7 @@ const MobileReviews = () => {
     setCurrentIndex(currentIndex === 0 ? 0 : currentIndex - 1);
   };
   const handleNext = () => {
-    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === length - 1 ? length - 1 : currentIndex + 1);
   };
   const handleTouchStart = (e) => {
     const touchDown = e.touches[0].clientX
