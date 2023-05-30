@@ -26,22 +26,10 @@ body {
 .input {
   color: hsl(12, 88%, 59%);
 }
-.twitter {
-  color: #fff;
-  cursor: pointer;
-}
-.fb {
-  color: #fff;
-  cursor: pointer;
-}
-.ig {
-  color: #fff;
-  cursor: pointer;
-}
-.pin {
-  color: #fff;
-  cursor: pointer;
-}
+.twitter,
+.fb,
+.ig,
+.pin,
 .youtube {
   color: #fff;
   cursor: pointer;
