@@ -48,7 +48,7 @@ const MobileReviews = () => {
               key={index}
               className={
                 index === currentIndex
-                  ? "flex flex-col item-center my-5 p-6 space-y-6 transition-all duration-1000 rounded-lg bg-VeryLightGray md:w-1/3"
+                  ? "flex flex-col item-center my-5 p-6 space-y-6 transition-all duration-1000 ease-linear rounded-lg bg-VeryLightGray md:w-1/3"
                   : ""
               }
             >
