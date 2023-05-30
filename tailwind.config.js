@@ -9,6 +9,9 @@ export default {
       lg: '967px',
       xl: '1440px'
     },
+    transitionDuration: {
+      '2000': '2000ms',
+    },
     extend: {
       colors: {
         BrightRed: 'hsl(12, 88%, 59%)',
@@ -18,7 +21,7 @@ export default {
         VeryDarkBlue: 'hsl(233, 12%, 13%)',
         VeryPaleRed: 'hsl(13, 100%, 96%)',
         VeryLightGray: 'hsl(0, 0%, 98%)',
-      }
+      } 
     },
   },
   plugins: [],
