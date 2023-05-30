@@ -7,7 +7,7 @@ const MobileReviews = () => {
   const length = Data.length;
 
   const handlePrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? 0 : currentIndex - 1);
   };
   const handleNext = () => {
     setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
