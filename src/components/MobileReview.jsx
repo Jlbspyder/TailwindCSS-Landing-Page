@@ -1,13 +1,48 @@
-import { useState } from "react";
+import { useState } from "react";              
+import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import Data from "../data";
 
 const MobileReviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchPosition, setTouchPosition] = useState(null)
+  const length = Data.length;
+
+  const handlePrevious = () => {
+    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
+  };
+  const handleNext = () => {
+    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
+  };
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX
+    setTouchPosition(touchDown)
+}
+  const handleTouchMove = (e) => {
+  const touchDown = touchPosition
+  if(touchDown === null) {
+      return
+  }
+
+  const currentTouch = e.touches[0].clientX
+  const diff = touchDown - currentTouch
+
+  if (diff > 5) {
+      handleNext()
+  }
+
+  if (diff < -5) {
+      handlePrevious()
+  }
+
+  setTouchPosition(null)
+}
   return (
     <section id="mobile-reviews">
       <div className="max-w-6xl px-5 mx-auto mt-20 text-center relative md:hidden">
         <h2 className="text-4xl font-bold text-center">What they’ve said</h2>
-        <div className="flex flex-col mt-20 md:flex-row md:space-x-5">
+        <div className="flex flex-col mt-20 md:flex-row md:space-x-5" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
+          <IoArrowBack  className="previous" onClick={handlePrevious} />
+          <IoArrowForward  className="next" onClick={handleNext} />
           {Data.map((item, index) => (
             <div
               key={index}
