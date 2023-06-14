@@ -16,7 +16,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-tailwindcss-w9VOquNxsk](https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-tailwindcss-w9VOquNxsk)
 - Live Site URL: [https://jlb-tailwindcss-landing-page.netlify.app/](https://jlb-tailwindcss-landing-page.netlify.app/)
 
 ### Built with
